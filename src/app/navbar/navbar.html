@@ -1,18 +1,18 @@
 <!-- One single, clean top banner block -->
 <div style="text-align: center; background-color: #030c928f; padding: 1.25rem 0;">
-    <span class="top-title-text">POKEMON-LEADERS</span>
-  </div>
-  
-  <!-- Clear, spaced out navigation links -->
-  <nav class="navbar">
-    <a routerLink="/home" routerLinkActive="active-tab">Home</a>
-    <a routerLink="/kanto" routerLinkActive="active-tab">Kanto Region</a>
-    <a routerLink="/johto" routerLinkActive="active-tab">Johto Region</a>
-  </nav>
-  
-  <!-- Dynamic routing outlet views render cleanly right here -->
-  <main>
-    <router-outlet></router-outlet>
-  </main>
+  <span class="top-title-text">POKEMON-LEADERS</span>
+</div>
 
-  
+<!-- Clear, spaced out navigation links -->
+<nav class="navbar">
+  <a routerLink="/home" routerLinkActive="active-tab">Home</a>
+  <a routerLink="/kanto" routerLinkActive="active-tab">Kanto Region</a>
+  <a routerLink="/johto" routerLinkActive="active-tab">Johto Region</a>
+  <!-- FIXED: Capitalized 'L' in routerLink and changed 'Hoenn' to lowercase 'hoenn' -->
+  <a routerLink="/hoenn" routerLinkActive="active-tab">Hoenn Region</a>
+</nav>
+
+<!-- Dynamic routing outlet views render cleanly right here -->
+<main>
+  <router-outlet></router-outlet>
+</main>

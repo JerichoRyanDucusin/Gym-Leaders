@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
-
-import { HoennGymLeadersService } from './hoenn-gym-leaders-service';
+import { HoennGymLeadersService } from './HoennGymLeader';
+HoennGymLeadersService // FIXED: Local path reference
 
 describe('HoennGymLeadersService', () => {
   let service: HoennGymLeadersService;

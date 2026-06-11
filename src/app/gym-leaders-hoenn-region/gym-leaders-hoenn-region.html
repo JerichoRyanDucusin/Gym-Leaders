@@ -1,0 +1,26 @@
+<main class="menu-section">
+    <h1>Hoenn Gym Leaders</h1>
+    
+    <div class="status-box">
+      {{ headlineMessage() }}
+    </div>
+  
+    <div class="card-grid">
+      @for (leader of GymLeaderH(); track leader.name) {
+        
+        <!-- Connect data paths cleanly downward -->
+        <app-leader-info 
+          [name]="leader.name"
+          [age]="18"
+          [location]="leader.town"
+          [badge]="leader.badge"
+          [emoji]="leader.emoji"
+          [motto]="leader.motto"
+          [pokemonTeam]="leader.pokemonTeam"
+          (mottoTriggered)="handleMottoUpdate(leader.name, $event)"
+        />
+        
+      }
+    </div>
+  </main>
+  

@@ -1,0 +1,107 @@
+.menu-section {
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .menu-section h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    color: #000000;
+  }
+  
+  .status-box {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #000000;
+    text-align: center;
+    border: 1px solid #767676; 
+    padding: 0.5rem 1rem;       
+    border-radius: 4px;         
+    display: inline-block;      
+    background-color: #ffffff;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px; 
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;     
+    border: 1px solid #767676; 
+    padding: 1.5rem 1rem;
+    border-radius: 4px;
+    background-color: #f4ebd0; /* Desert Beige */
+    box-sizing: border-box;
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    color: #000000;
+  }
+  
+  .card p {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .card strong {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0 0.25rem 0;
+  }
+  
+  .card ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  
+  .card li {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 0.25rem;
+  }
+  
+  button {
+    display: block;
+    margin: 0.5rem auto 0 auto; 
+    background-color: #f0f0f0; 
+    color: #000000;
+    border: 1px solid #767676; 
+    padding: 2px 10px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  button:active {
+    background-color: #e5e5e5;
+    border-color: #4f4f4f;
+  }
+  
+  .icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  

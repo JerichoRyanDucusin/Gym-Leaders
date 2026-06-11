@@ -88,6 +88,15 @@ h1 {
   margin: 0;
   padding: 0;
 }
+/* Update the baseline workspace host to use a clean sand-gray canvas */
+:host, body, html {
+  display: block !important;
+  background-color: #f7f4eb !important; /* Soft sand-beige instead of solid green */
+  min-height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+
 
   
   
