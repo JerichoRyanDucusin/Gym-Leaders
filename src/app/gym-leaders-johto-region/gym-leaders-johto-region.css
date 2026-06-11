@@ -1,0 +1,47 @@
+.menu-section {
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.menu-section h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: firebrick;
+}
+
+.status-box {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px; 
+  justify-content: center;
+}
+/* Update your status box style rules to include a border wrapper */
+.status-box {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #000000;
+  text-align: center;
+  
+  /* FIXED: Adds the border line around the text where they speak */
+  border: 1px solid #767676; 
+  padding: 0.5rem 1rem;       /* Adds breathing space inside the box line */
+  border-radius: 4px;         /* Optional: Softens the corners slightly */
+  display: inline-block;      /* Keeps the box tight around the text string */
+  background-color: #fcfcfc;  /* Soft off-white to make the box pop nicely */
+}

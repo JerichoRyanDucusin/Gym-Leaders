@@ -1,0 +1,25 @@
+<main class="menu-section">
+  <h1>Johto Gym Leaders</h1>
+  
+  <div class="status-box">
+    {{ headlineMessage() }}
+  </div>
+
+  <div class="card-grid">
+    @for (leader of GymLeaderJ(); track leader.name) {
+      
+      <!-- Property Bindings pass information down; Event Binding catches output clicks -->
+      <app-leader-info 
+        [name]="leader.name"
+        [age]="leader.age"
+        [location]="leader.location"
+        [badge]="leader.badge"
+        [emoji]="leader.emoji"
+        [motto]="leader.motto"
+        [pokemonTeam]="leader.pokemonTeam"
+        (mottoTriggered)="handleMottoUpdate(leader.name, $event)"
+      />
+      
+    }
+  </div>
+</main>

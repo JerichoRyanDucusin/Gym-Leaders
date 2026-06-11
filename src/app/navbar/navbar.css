@@ -1,0 +1,48 @@
+/* Center and space out your navigation links block */
+.navbar {
+    background-color: #0da584; /* Sleek dark bar background */
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;                 /* Pushes links apart so they don't touch */
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #767676;
+  }
+  
+  /* Clear readable text style rules for your tab links */
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff !important; /* Force high-contrast white link color */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover background change state */
+  .navbar a:hover {
+    background-color: rgba(248, 9, 9, 0.1);
+  }
+  
+  /* Highlights the active active link with desert beige styling */
+  .navbar a.active-tab {
+    background-color: #f4ebd0 !important;
+    color: #000000 !important; /* Inverts text color to bold dark when focused */
+    border: 1px solid #767676;
+  }
+  
+  /* Styled text title badge wrapper rules */
+  .top-title-text { 
+    display: inline-block;     
+    border: 2px solid #ff0000; 
+    padding: 0.4rem 1.5rem;    
+    background-color: #1f0052; 
+    color: #ffffff;            
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.05em;
+  }
+  
+  

@@ -1,0 +1,93 @@
+h1 {
+    text-align: center;
+}
+/* Remove solid gray/white backgrounds from your section containers */
+.menu-section {
+    padding: 3rem 1.5rem;
+    min-height: auto; /* Let the global body handle the height */
+    background: transparent !important; 
+  }
+  
+  /* Make your section titles stand out sharply on the dark backdrop */
+  .menu-section h1 {
+    color: #ffffff !important;
+    text-shadow: 0 4px 12px rgba(252, 56, 56, 0.7);
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Modern clean card overlay (Glassmorphism effect) */
+  .card {
+    background: rgba(255, 255, 255, 0.94) !important; /* Slightly transparent crisp white */
+    backdrop-filter: blur(4px);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+  .navbar {
+    background-color: #0d9700b6;
+    border-bottom: 1px solid #0d9700b6;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #f4f3f7;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid transparent;
+  }
+  
+  /* Active path visualization styling indicator rules */
+  .navbar a.active-tab {
+    background-color: #ff000000; /* Highlights active route with desert beige */
+    border: 1px solid #030463;
+    border-radius: 2px;
+  }
+  :host{
+    display: block;
+    background-color: forestgreen;
+    min-height: 100vh;
+  }
+  /* 1. Target the top banner container wrapper */
+.navbar-header, h1, div {
+  /* Find the selector that targets that green bar and add these lines: */
+  text-align: center;
+}
+
+/* 2. Create or update a specific rule for the text title */
+.top-title-text { 
+  display: inline-block;     /* Keeps the border box tightly wrapped around the letters */
+  border: 2px solid #ee0505; /* Solid crisp black outline border track line */
+  padding: 0.5rem 1.5rem;    /* Generates an even spacing gap inside the box lines */
+  background-color: #ffffff; /* Gives the text box a white background so it pops cleanly */
+  color: #f50808;            /* Forces the letters to show up sharp and dark */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-top: 1rem;          /* Pushes it slightly away from the top window frame edge */
+}
+/* FIXED: Forces the clean light sand-beige color to display correctly behind the cards */
+:host, body, html {
+  display: block !important;
+  background-color: #0d9700b6 !important; /* Soft sand gray instead of black */
+  min-height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+
+  
+  
